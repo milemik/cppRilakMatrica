@@ -36,6 +36,10 @@ void popunjavanjeMatrice (int m, int n, int a[][MAX]) {
 		}
 		// Poslednju kolonu od preostalih kolona
 		if( columnIndex < endColumnIndex) {
+			/* 
+			endRowIndex - 1?????? Smanjo si matricu za jedan element
+			treba da bude samo endRowIndex
+			*/
 			for(int i = endRowIndex; i>=rowIndex; i--) {
 				a[i][columnIndex] = firstValue++;
 			}
